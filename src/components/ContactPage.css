@@ -1,0 +1,143 @@
+/* Ensure contact page gets space from the navbar */
+.contact-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+    min-height: calc(100vh - 200px); /* Make space below navbar */
+    flex-wrap: wrap;
+  }
+  
+  .contact-info,
+  .contact-form {
+    width: 45%; /* Default width for larger screens */
+    margin-bottom: 30px;
+  }
+  
+  .contact-info h2,
+  .contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .contact-form label {
+    font-size: 16px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .status {
+    margin-top: 10px;
+    font-size: 16px;
+    color: green;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 1024px) {
+    .contact-page {
+      padding: 30px;
+      min-height: calc(100vh - 100px); /* Adjust for smaller screen */
+    }
+  
+    .contact-info,
+    .contact-form {
+      width: 100%; /* Full width on smaller screens */
+    }
+  
+    .contact-info h2,
+    .contact-form h2 {
+      font-size: 22px;
+    }
+  
+    .contact-info p {
+      font-size: 16px;
+    }
+  
+    .contact-form button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contact-page {
+      flex-direction: column;
+      min-height: calc(100vh - 120px); /* More space for navbar */
+    }
+  
+    .contact-info,
+    .contact-form {
+      width: 100%;
+    }
+  
+    .contact-info h2,
+    .contact-form h2 {
+      font-size: 20px;
+    }
+  
+    .contact-info p {
+      font-size: 14px;
+    }
+  
+    .contact-form button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .contact-page {
+      padding: 20px;
+      min-height: calc(100vh - 150px); /* More space for navbar */
+    }
+  
+    .contact-info h2,
+    .contact-form h2 {
+      font-size: 18px;
+    }
+  
+    .contact-info p {
+      font-size: 14px;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      font-size: 14px;
+    }
+  
+    .contact-form button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }  
+  

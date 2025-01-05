@@ -9,11 +9,11 @@ const About = () => {
   };
 
   return (
-    <section className="bg-gray-100 min-h-screen flex items-center justify-center px-6 md:px-12 lg:px-24">
-      <div className="container mx-auto flex flex-col md:flex-row items-center gap-12">
+    <section className="bg-gray-100 min-h-screen flex items-center justify-center px-6 md:px-12 lg:px-24 pt-24">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center gap-12">
         
         <motion.div
-          className="flex justify-center md:justify-start max-w-lg"
+          className="flex justify-center md:justify-start max-w-lg w-full"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
@@ -27,7 +27,7 @@ const About = () => {
 
         
         <motion.div
-          className="text-center md:text-left max-w-xl"
+          className="text-center md:text-left max-w-xl w-full"
           initial="hidden"
           animate="visible"
           variants={{
